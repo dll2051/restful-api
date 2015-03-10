@@ -1,0 +1,13 @@
+CREATE TABLE `tb_sale_info` (
+  `id` varchar(32) NOT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `img` datetime DEFAULT NULL,
+  `url` datetime DEFAULT NULL,
+  `source` int(11) DEFAULT NULL,
+  `mallname` varchar(50) NOT NULL,
+  `time` varchar(32) DEFAULT NULL,
+  `detail` varchar(50) NOT NULL,
+  `is_cache` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `source` (`source`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
