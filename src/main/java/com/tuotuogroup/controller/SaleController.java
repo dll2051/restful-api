@@ -1,6 +1,8 @@
 package com.tuotuogroup.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.tuotuogroup.core.hibernate.PageRequest;
+import com.tuotuogroup.core.pagination.DataGridModel;
 import com.tuotuogroup.core.web.ResultConstant;
 import com.tuotuogroup.core.web.ResultVO;
 import com.tuotuogroup.entity.SaleDetail;
@@ -87,5 +90,29 @@ public class SaleController {
 			resultVO.setMessage(e.getMessage());
 		}
 		return resultVO;
+	}
+	/**
+	 * 查询
+	 * @return 返回给客户端的结果
+	 */
+	@RequestMapping(value = "saleDetail/querySaleDetailList")
+	@ResponseBody
+	public Map<String, Object> querySaleDetailList(PageRequest pageRequest,
+			DataGridModel dgm,
+			@RequestParam(value = "id", required = false) String id) {
+		Map<String, Object> result = new HashMap<String, Object>(2);
+		try {
+			Map map = saleService.getSaleDetailList(dgm);
+			if (map != null) {
+				// 查询总条数
+				    result.put("total", map.get("listSize"));
+				// 查询结果集
+				    result.put("rows", map.get("list"));
+				    return result;
+				}
+		} catch (Exception e) {
+			log.error(e.getMessage(), e);
+		}
+		return null;
 	}
 }

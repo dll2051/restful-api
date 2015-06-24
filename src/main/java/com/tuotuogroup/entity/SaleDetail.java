@@ -32,8 +32,8 @@ public class SaleDetail implements Serializable{
  */
 	@Id
 	@Column(name = "ID", unique = true, nullable = false, length = 20)
-	@GeneratedValue(generator = "saleGenerator")
-	@GenericGenerator(name = "saleGenerator", strategy = "com.tuotuogroup.utils.UUIDGenerator")
+//	@GeneratedValue(generator = "saleGenerator")
+//	@GenericGenerator(name = "saleGenerator", strategy = "com.tuotuogroup.utils.UUIDGenerator")
 	private String id;
 	@Column(name = "TITLE", length = 200)
 	private String title;

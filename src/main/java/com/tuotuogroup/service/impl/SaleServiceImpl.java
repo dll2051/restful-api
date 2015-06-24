@@ -1,5 +1,7 @@
 package com.tuotuogroup.service.impl;
 
+import java.util.Map;
+
 import javax.annotation.Resource;
 import javax.transaction.Transactional;
 
@@ -9,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.tuotuogroup.core.hibernate.Page;
 import com.tuotuogroup.core.hibernate.PageRequest;
+import com.tuotuogroup.core.pagination.DataGridModel;
 import com.tuotuogroup.dao.SaleDao;
 import com.tuotuogroup.entity.SaleDetail;
 import com.tuotuogroup.service.SaleService;
@@ -32,6 +35,15 @@ public class SaleServiceImpl implements SaleService {
 
 	public Page<SaleDetail> queryDictionaryByPage(PageRequest pageRequest) {
 		return saleDao.queryDictionaryByPage(pageRequest);
+	}
+
+
+	/**
+	 * 
+	 */
+	@Override
+	public Map getSaleDetailList(DataGridModel dgm) {
+		return saleDao.getSaleDetailList(dgm);
 	}
 	
 
