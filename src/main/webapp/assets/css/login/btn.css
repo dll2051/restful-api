@@ -1,0 +1,277 @@
+/*
+* time:2014-09-16
+*email:598580796@qq.com
+*company:万达信息股份有限公司
+*/
+.wd-button {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.wd-button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+.wd-button {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+   /* font-weight: 400;
+    line-height: 1.42857143;*/
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: #444;
+    color: rgba(0,0,0,.8);
+    *color: #444;
+    border: 1px solid #999;
+    border: 0 rgba(0,0,0,0);
+    background-color: #E6E6E6;
+    text-decoration: none;
+    *overflow: visible;
+    font-family: 'microsoft yahei';
+    line-height: 20px;
+}
+button.wd-button,input.wd-button{
+    *height: 32px;
+    *line-height: 18px;
+}
+
+.wd-button-hover,.wd-button:hover,.wd-button:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));
+    background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: -moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));
+    background-image: -o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    text-decoration: none;
+}
+
+.wd-button:focus {
+    outline: 0 !important;
+    outline: none;
+}
+
+.wd-button.active,.wd-button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset
+}
+
+.wd-button[disabled],.wd-button.disabled,.wd-button.disabled:hover,.wd-button.disabled:focus,.wd-button.disabled:active {
+    border: 0;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: .4;
+    -moz-opacity: .4;
+    opacity: .4;
+    cursor: not-allowed;
+    box-shadow: none
+}
+
+.wd-button-hidden {
+    display: none
+}
+
+.wd-button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+.wd-button-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd
+}
+
+.wd-button-primary:hover,.wd-button-primary:focus,.wd-button-primary:active,.wd-button-primary.active{
+    color: #fff;
+    background-color: #3071a9;
+    border-color: #285e8e
+}
+
+.wd-button-primary:active,.wd-button-primary.active {
+    background-image: none
+}
+
+.wd-button-primary.disabled,.wd-button-primary[disabled],fieldset[disabled] .wd-button-primary,.wd-button-primary.disabled:hover,.wd-button-primary[disabled]:hover,fieldset[disabled] .wd-button-primary:hover,.wd-button-primary.disabled:focus,.wd-button-primary[disabled]:focus,fieldset[disabled] .wd-button-primary:focus,.wd-button-primary.disabled:active,.wd-button-primary[disabled]:active,fieldset[disabled] .wd-button-primary:active,.wd-button-primary.disabled.active,.wd-button-primary[disabled].active,fieldset[disabled] .wd-button-primary.active {
+    background-color: #428bca;
+    border-color: #357ebd
+}
+
+.wd-button-primary .badge {
+    color: #428bca;
+    background-color: #fff
+}
+
+
+.wd-button-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c
+}
+
+.wd-button-success:hover,.wd-button-success:focus,.wd-button-success:active,.wd-button-success.active{
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
+
+.wd-button-success:active,.wd-button-success.active,.open>.dropdown-toggle.wd-button-success {
+    background-image: none
+}
+
+.wd-button-success.disabled,.wd-button-success[disabled],fieldset[disabled] .wd-button-success,.wd-button-success.disabled:hover,.wd-button-success[disabled]:hover,fieldset[disabled] .wd-button-success:hover,.wd-button-success.disabled:focus,.wd-button-success[disabled]:focus,fieldset[disabled] .wd-button-success:focus,.wd-button-success.disabled:active,.wd-button-success[disabled]:active,fieldset[disabled] .wd-button-success:active,.wd-button-success.disabled.active,.wd-button-success[disabled].active,fieldset[disabled] .wd-button-success.active {
+    background-color: #5cb85c;
+    border-color: #4cae4c
+}
+
+.wd-button-success .badge {
+    color: #5cb85c;
+    background-color: #fff
+}
+
+.wd-button-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da
+}
+
+.wd-button-info:hover,.wd-button-info:focus,.wd-button-info:active,.wd-button-info.active{
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc
+}
+
+.wd-button-info:active,.wd-button-info.active {
+    background-image: none
+}
+
+.wd-button-info.disabled,.wd-button-info[disabled],fieldset[disabled] .wd-button-info,.wd-button-info.disabled:hover,.wd-button-info[disabled]:hover,fieldset[disabled] .wd-button-info:hover,.wd-button-info.disabled:focus,.wd-button-info[disabled]:focus,fieldset[disabled] .wd-button-info:focus,.wd-button-info.disabled:active,.wd-button-info[disabled]:active,fieldset[disabled] .wd-button-info:active,.wd-button-info.disabled.active,.wd-button-info[disabled].active,fieldset[disabled] .wd-button-info.active {
+    background-color: #5bc0de;
+    border-color: #46b8da
+}
+
+.wd-button-info .badge {
+    color: #5bc0de;
+    background-color: #fff
+}
+
+.wd-button-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236
+}
+
+.wd-button-warning:hover,.wd-button-warning:focus,.wd-button-warning:active {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512
+}
+
+.wd-button-warning:active,.wd-button-warning.active {
+    background-image: none
+}
+
+.wd-button-warning.disabled,.wd-button-warning[disabled],fieldset[disabled] .wd-button-warning,.wd-button-warning.disabled:hover,.wd-button-warning[disabled]:hover,fieldset[disabled] .wd-button-warning:hover,.wd-button-warning.disabled:focus,.wd-button-warning[disabled]:focus,fieldset[disabled] .wd-button-warning:focus,.wd-button-warning.disabled:active,.wd-button-warning[disabled]:active,fieldset[disabled] .wd-button-warning:active,.wd-button-warning.disabled.active,.wd-button-warning[disabled].active,fieldset[disabled] .wd-button-warning.active {
+    background-color: #f0ad4e;
+    border-color: #eea236
+}
+
+.wd-button-warning .badge {
+    color: #f0ad4e;
+    background-color: #fff
+}
+
+.wd-button-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a
+}
+
+.wd-button-danger:hover,.wd-button-danger:focus,.wd-button-danger:active{
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925
+}
+
+.wd-button-danger:active,.wd-button-danger.active {
+    background-image: none
+}
+
+.wd-button-danger.disabled,.wd-button-danger[disabled],fieldset[disabled] .wd-button-danger,.wd-button-danger.disabled:hover,.wd-button-danger[disabled]:hover,fieldset[disabled] .wd-button-danger:hover,.wd-button-danger.disabled:focus,.wd-button-danger[disabled]:focus,fieldset[disabled] .wd-button-danger:focus,.wd-button-danger.disabled:active,.wd-button-danger[disabled]:active,fieldset[disabled] .wd-button-danger:active,.wd-button-danger.disabled.active,.wd-button-danger[disabled].active,fieldset[disabled] .wd-button-danger.active {
+    background-color: #d9534f;
+    border-color: #d43f3a
+}
+
+.wd-button-danger .badge {
+    color: #d9534f;
+    background-color: #fff
+}
+
+.wd-button-link {
+    font-weight: 400;
+    color: #428bca;
+    cursor: pointer;
+    border-radius: 0
+}
+
+.wd-button-link,.wd-button-link:active,.wd-button-link[disabled],fieldset[disabled] .wd-button-link {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.wd-button-link,.wd-button-link:hover,.wd-button-link:focus,.wd-button-link:active {
+    border-color: transparent;
+    background: none !important;
+}
+
+.wd-button-link:hover,.wd-button-link:focus {
+    color: #2a6496;
+    text-decoration: underline;
+    background-color: transparent;
+    background: none !important;
+}
+
+.wd-button-link[disabled]:hover,fieldset[disabled] .wd-button-link:hover,.wd-button-link[disabled]:focus,fieldset[disabled] .wd-button-link:focus {
+    color: #777;
+    text-decoration: none
+}
+
+.wd-button-lg{
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px
+}
+
+
+.wd-button-sm{
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+button.wd-button-lg,input.wd-button-lg{
+    *height: 42px;
+}
+button.wd-button-sm,input.wd-button-sm{
+    *height: 28px;
+}
+
+
+.wd-button-block {
+    display: block;
+    width: 100%;
+}

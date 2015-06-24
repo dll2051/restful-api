@@ -1,0 +1,195 @@
+/*
+* time:2014-09-16
+*email:598580796@qq.com
+*company:万达信息股份有限公司
+*/
+html{color:#000;background:#FFF; font-family:"微软雅黑",Verdana, Arial; font-size:14px; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+#yui3-css-stamp.cssreset{display:none}
+.clearfix:after {content: ".";display: block; height: 0;clear: both;visibility: hidden;}
+.clearfix { zoom:1;}  /* for IE/Mac */
+a,a:link{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+a:focus{outline: 0; outline: none;}
+table{border-collapse:collapse;border-spacing:0}
+
+/**
+*
+*/
+html,body{
+    height: 100%;
+    background: #fff;
+    background-size:100%;
+    overflow: hidden;
+    position: relative;
+    min-width: 1000px;
+    color: #666;
+}
+
+.login-bg{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-top: -580px;
+    margin-left: -960px;
+    width: 1920px;
+    height: 1080px;
+    background: url("../../images/login/login-body-bg.jpg") no-repeat;
+    z-index: 1;
+}
+.login-main{
+    width:860px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+}
+.login-title{
+    position: absolute;
+    top:50%;
+    left: -30px;
+    margin-top: -225px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 36px;
+    color: #d3eaff;
+    letter-spacing: 3px;
+    text-shadow: 0 0 0;
+}
+.login-title img{
+    display: inline;
+    float: left;
+    height: 56px;
+    background: url("../../images/login/login-logo.jpg") no-repeat;
+    margin-right: 15px;
+}
+.login-title span{
+    display: inline;
+    float: left;
+}
+
+
+.login-pic-list{
+    position: absolute;
+    left: -28px;
+    top:50%;
+    margin-top: -148px;
+    overflow: hidden;
+    zoom: 1;
+    border: 1px solid #dbe9f6;
+}
+.login-pic-list li{
+    float: left;
+    display: inline;
+    border: 1px solid #dbe9f6;
+}
+.login-pic-list li img{
+    display: block;
+    width: 157px;
+    height: 98px;
+}
+.login-box{
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top: -260px;
+    width: 326px;
+    height: 354px;
+    background: url("../../images/login/login-sprite.png") no-repeat 0 -42px;
+}
+.login-box .login-box-content{
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0;
+}
+.login-box-title{
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.login-title-icon{
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url("../../images/login/login-sprite.png") no-repeat 0 0;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.login-btn{
+    display:block;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background: #6ac0ff;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.login-list{
+
+}
+.login-list li{
+    height: 34px;
+    margin-bottom: 15px;
+}
+.login-list li .input-box{
+    display: inline;
+    float: left;
+    height: 34px;
+    border: 0;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.login-list li .input-box input{
+    border: 0;
+    border: none;
+    /* height: 20px; */
+    padding: 7px 10px;
+    width: 168px;
+    background: #fff;
+    color: #666;
+}
+.login-list li .input-box input:focus{
+    outline: 0;
+}
+.login-list li.yzm-tool .input-box input{
+    width: 145px;
+}
+.login-list li.yzm-tool .yzm{
+    float: left;
+    display: inline;
+}
+.login-list li .label-check{
+    display: inline;
+    float: left;
+    margin-top: 11px;
+    color: #666666;
+    height: 18px;
+    line-height: 16px;
+}
+.login-list li .label-check input{
+    margin-right: 5px;
+}
+.login-btn:hover{
+    background: #44aefc;
+    text-decoration: none;
+}
+

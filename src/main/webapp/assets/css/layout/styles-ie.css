@@ -1,0 +1,4 @@
+/* 边侧栏
+----------------------------------------------------------*/
+#left ul#nav li a:active {background: #2897f3;}
+#left ul#nav ul.sub-menu i.icon-angle-right{position: absolute;left: 10px;display: inline-block;font-family: FontAwesome;font-style: normal;font-weight: normal;content: "\f105";*zoom:expression( this.runtimeStyle['zoom'] = '1',this.innerHTML = '&#xf105;');}

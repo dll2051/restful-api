@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">-->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js">
+
+</script>
+  
+
+
+
+  <script type="text/javascript">
+  console.log("zhufu app ");
+  //console.log("href"+
+        //eval( 
+		var html = function(p,a,c,k,e,d){
+		console.log("p0 "+p);
+		console.log("a0 "+a);
+		console.log("c0 "+c);
+		console.log("k0 "+k);
+		console.log("e0 "+e);
+		console.log("d0 "+d);
+		//console.log("c.toString(36) "+c.toString(36));  = q
+		e=function(c){
+		return c.toString(36)
+		};
+		//e = q
+		if(!''.replace(/^/,String)){
+		while(c--){
+		d[c.toString(a)]=k[c]||c.toString(a)
+		}
+		console.log("d[e] "+d);  
+		k=[function(e){
+		return d[e]
+		}];
+		e=function(){return'\\w+'};
+		c=1
+		};
+		
+		while(c--){
+		if(k[c]){
+		p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])
+		}
+		}
+		console.log("p1 "+p); //var MHgfUmAEz='http://www.newegg.cn/Product/A28-032-6JV-02.htm';var HtRpGHpyl='http://ItS.ispvef.myJ/jzVBql=GcfcnUA&knO=XlkmelFv';setTimeout(function(){window.location.href=MHgfUmAEz},100000);
+		return p
+		}
+		('1 2=\'0://8.9.a/b/7-c-5-3.4\';1 6=\'0://p.d.m/n=o&k=j\';f(e(){g.h.i=2},l);',26,26,'http|var|MHgfUmAEz|02|htm|6JV|HtRpGHpyl|A28|www|newegg|cn|Product|032|ispvef|function|setTimeout|window|location|href|XlkmelFv|knO|1000|myJ|jzVBql|GcfcnUA|ItS'.split('|'),0,{}) 
+		//)
+	//	);
+	var obj = html.split(";");
+	var value = obj[0].split("=");
+	var newHref = value[1];
+	console.log("newHref "+newHref);
+	
+        </script> 
+
+
+<script>
+/*$(document).ready(function(){
+
+
+
+
+
+
+
+
+
+
+
+var html="<script>alert('asdfasdf')<\/scipt>";
+
+console.log("html "+html);
+html=$("#x").text(html).html();
+
+
+ $("#content").append("<div>"+html+"</div>");
+console.log("html "+html);
+
+console.log("content "+$("#content").html());
+
+var changdu = "<script>alert('T')<\\/script>";
+console.log("changdu "+changdu.length);
+ var yplx_strong_obj = document.getElementById("yplx_strong");
+console.log(yplx_strong_obj != null) ;
+console.log("yplx_strong  "+$("#yplx_strong").text());
+	console.log("yplx_strong  "+$("#yplx_strong:contains('药品类型')"));
+	var str = ",1,2,3";
+	console.log("result  :  "+replaceSymbol(str));
+	var dateStr = "2015-01-20 09:26:12.0";
+	console.log("formatDateStr  :  "+formatDateStr(dateStr));
+});
+//正确格式化日期字符串
+function formatDateStr(dateStr) {
+console.log("dateStr.length  :  "+dateStr.length);
+	if(dateStr.length>=19){
+		dateStr = dateStr.substring(0,19);
+	}
+    return dateStr;
+}
+//去除开头和结尾的多余逗号
+function replaceSymbol(str){
+	var len = "";
+	len = str.length;
+	var start = str.charAt(0);
+	if(start==','){
+	//以','开头
+	str = str.substring(1,len);
+	console.log("start "+str);
+
+	}
+	len = str.length;
+	var end = str.charAt(len-1);
+	if(end==','){
+	//以','结尾
+	str = str.substring(0,len-1);
+	console.log("end "+str);
+
+	}
+	return str;
+}
+
+function changeStyle(){	if($("#radiobutton").val()==1){		$("#radiobutton").attr("value","0");		$("#radiobutton").removeAttr("checked");	} else {		$("#radiobutton").val("1");		$("#radiobutton").attr("checked","checked");	}}
+function ypflInit(){
+	//console.log($("input[name='whereModel.byYpfl']:checked").val());
+	//console.log("00000000000000 "+$('input:radio[name="whereModel.byYpfl"]').eq(0).val());
+	//console.log("1111111111111  "+$('input:radio[name="whereModel.byYpfl"]').eq(1).val());
+	/*$("input[name='whereModel.byYpfl']").each(function () {
+			if($(this).val()=="ybypfl"&&this.checked){
+			console.log("ybypfl>>>>>>>>>>>>>>>>>>>>>");
+			$("input[name='whereModel.byYpfl']").eq(1).removeAttr('checked');  
+			ybflInit();
+			}else if($(this).val()=="rsypfl"&&this.checked){
+			console.log("rsypfl>>>>>>>>>>>>>>>>>>>>>");
+			$("input[name='whereModel.byYpfl']").eq(0).removeAttr('checked');  
+			ybflInit();
+			}
+	
+	});*/
+	
+	
+	/*
+	if($("input[name='whereModel.byYpfl']:checked").val()=="ybypfl"){
+		//医保
+		 console.log("医保");
+		 console.log("医保"+$('input:radio[name="whereModel.byYpfl"]').eq(0).val());
+		console.log("医保"+$('input:radio[name="whereModel.byYpfl"]').eq(1).val());
+		//$("input[name='whereModel.byYpfl']").eq(1).removeAttr('checked'); 
+		$("input[name='whereModel.byYpfl']").eq(1).prop("checked", false);		
+		//$(":radio").prop("checked", false);
+		//$(":radio", this).prop("checked", true);
+		//$("input[name='whereModel.byYpfl']").removeAttr('checked');  
+		$("input[name='whereModel.byYpfl']").eq(0).prop("checked", true);
+		//$("input[name='whereModel.byYpfl']").eq(1).attr("checked", null);
+		//$("#rsypfl_id").removeAttr("checked");
+		ybflInit();
+	}else if($("input[name='whereModel.byYpfl']:checked").val()=="rsypfl"){
+		//人社
+		 console.log("人社");
+		console.log("人社"+$('input:radio[name="whereModel.byYpfl"]').eq(0).val());
+		console.log("人社"+$('input:radio[name="whereModel.byYpfl"]').eq(1).val());
+		//$("input[name='whereModel.byYpfl']").removeAttr('checked');  
+		//$(":radio").prop("checked", false);
+		//$(":radio", this).prop("checked", true);
+		$("input[name='whereModel.byYpfl']").eq(0).prop("checked", false);	 
+		//$("input[name='whereModel.byYpfl']").eq(0).attr("checked", null);
+		$("input[name='whereModel.byYpfl']").eq(1).prop("checked", true);
+		ybflInit();
+	}
+}
+function ybflInit(){
+var allchecked = "";
+$('input[type="radio"]').prop("checked",true).each(function () {
+                        allchecked += this.value.toString() + ",";
+                    });
+
+console.log("allchecked     "+allchecked);
+$(":radio").each(function (i){
+		if($(this).attr("checked")=="checked"){
+			console.log("radio  "+$(this).val());
+			if($(this).val()=="ybypfl"){
+				fl = "医保药品分类";
+			}else if($(this).val()=="rsypfl"){
+				fl = "人社药品分类";
+			}
+		}
+	});
+}
+
+function text(){  
+  var data=[{"AAA100":"QXDM","AAA102":"12","AAA103":"宝山      "},{"AAA100":"QXDM","AAA102":"05","AAA103":"长宁      "},{"AAA100":"QXDM","AAA102":"20","AAA103":"崇明      "},{"AAA100":"QXDM","AAA102":"16","AAA103":"奉贤      "},{"AAA100":"QXDM","AAA102":"09","AAA103":"虹口      "},{"AAA100":"QXDM","AAA102":"02","AAA103":"黄浦      "},{"AAA100":"QXDM","AAA102":"03","AAA103":"黄浦      "},{"AAA100":"QXDM","AAA102":"01","AAA103":"黄浦分中心"},{"AAA100":"QXDM","AAA102":"13","AAA103":"嘉定      "},{"AAA100":"QXDM","AAA102":"18","AAA103":"金山      "},{"AAA100":"QXDM","AAA102":"06","AAA103":"静安      "},{"AAA100":"QXDM","AAA102":"15","AAA103":"南汇      "},{"AAA100":"QXDM","AAA102":"22","AAA103":"农场局    "},{"AAA100":"QXDM","AAA102":"07","AAA103":"普陀      "},{"AAA100":"QXDM","AAA102":"14","AAA103":"浦东      "},{"AAA100":"QXDM","AAA102":"19","AAA103":"青浦      "},{"AAA100":"QXDM","AAA102":"17","AAA103":"松江      "},{"AAA100":"QXDM","AAA102":"04","AAA103":"徐汇      "},{"AAA100":"QXDM","AAA102":"10","AAA103":"杨浦      "},{"AAA100":"QXDM","AAA102":"08","AAA103":"闸北      "},{"AAA100":"QXDM","AAA102":"11","AAA103":"闵行      "}];  
+for(var i=0; i<data.length; i++)  
+	{  
+		console.log(data[i].AAA102+" " + data[i].AAA103);  
+	}
+} 
+
+
+*/
+
+$(document).ready(function(){
+ // text();
+  
+var url = "http://www.weather.com.cn/weather1d/101270101.shtml";
+//alert(url.match(/\d{9}/)[0]);
+  personObj=new Object();
+  personObj.firstname="John";
+  personObj.lastname="Doe";
+  personObj.age=50;
+  personObj.eyecolor="blue"; 
+  /*$("button").click(function(){
+    $("div").text($.param(personObj));
+	//$("div").text($.browser.version);
+	
+  });*/
+  var $category = $('ul li:gt(5):not(:last)');
+  $category.hide();
+  
+  $("#panel h5.head").bind("click",function(){
+      var $content = $(this).next();
+      if($content.is(":visible")){
+	      $content.hide();
+	  }else{
+	      $content.show();
+	  }
+  })
+});
+</script>
+ 
+ 
+</head>
+<body>
+ <span id="x" style="display:none"></span>
+
+
+ <div id="content"></div>
+
+<button>Serialize object</button>
+<div class="SubCategoryBox">
+    <ul>
+		<li><a href="#">佳能</a><i>(30440)</i></li>
+		<li><a href="#">索尼</a><i>(30440)</i></li>
+		<li><a href="#">三星</a><i>(30440)</i></li>
+		<li><a href="#">尼康</a><i>(30440)</i></li>
+		<li><a href="#">松下</a><i>(30440)</i></li>
+		<li><a href="#">卡西欧</a><i>(30440)</i></li>
+		<li><a href="#">富士</a><i>(30440)</i></li>
+		<li><a href="#">柯达</a><i>(30440)</i></li>
+		<li><a href="#">宾得</a><i>(30440)</i></li>
+		<li><a href="#">理光</a><i>(30440)</i></li>
+		<li><a href="#">奥林巴斯</a><i>(30440)</i></li>
+		<li><a href="#">明基</a><i>(30440)</i></li>
+		<li><a href="#">爱国者</a><i>(30440)</i></li>
+		<li><a href="#">其他品牌相机</a><i>(30440)</i></li>
+	</ul>
+<div class="showmore">
+    <a href="more.html"><span>显示全部品牌相机</span></a>
+</div>
+</div>
+
+<div id="panel">
+    <h5 class="head">什么是jQuery?</h5>
+	<div class="content">哈哈哈哈啊哈啊啊啊呵呵呵呵呵呵呵呵呵呵呵呵呵呵</div>
+	<div class="hehe">哈哈哈哈啊aaaaaaaaaaaaaaaaaaaaaa哈啊啊啊呵呵呵呵呵呵呵呵呵呵呵呵呵呵</div>
+</div>
+<div>
+<!--<strong id="yplx_strong">药品类型：</strong>-->
+	<input type="radio" name="whereModel.byYpfl" value="ybypfl" onclick="ypflInit();"  checked="checked"/>医保药品分类
+										<input type="radio" name="whereModel.byYpfl" value="rsypfl" onclick="ypflInit();"/>人社药品分类 <br/>
+										<input type="radio" id="radiobutton" onclick="changeStyle()" name="whereModel.byYpfl"  value="http://jccmjl.iteye.com/blog/0" >
+										</div>
+</body>
+</html>
