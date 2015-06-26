@@ -20,16 +20,6 @@ public class SaleDetail implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-/**
- * "id": "1150766", 
-            "title": "华硕（ASUS） Z97-A 主板 （Intel Z97/LGA 1150） 849元（赠 玄冰400）", 
-            "img": "http://7bv7rb.com1.z0.glb.clouddn.com/296db4e5f0920740399df91524af26ba.jpg", 
-            "url": "http://zhufu.sinaapp.com/api/go.php?id=1150766", 
-            "source": "SMZDM发现", 
-            "mallname": "京东商城", 
-            "time": "4分钟", 
-            "detail": "华硕旗舰Z97芯片组上也有价廉物美的型号——京东特供版。Z97-A是上一代Z87-A这款经典款的升级型号。主板提供8相供电，支持DDR3 3200（超频），同时添加了高品质的音频区域：Crystal Sound 2(美声大师)以及Intel I218-V网卡芯片搭配的Turbo LAN网络优化软件。虽然是特供版但是基础的东西还是很齐全。 京东报价9			..."
- */
 	@Id
 	@Column(name = "ID", unique = true, nullable = false, length = 20)
 //	@GeneratedValue(generator = "saleGenerator")
@@ -44,9 +34,9 @@ public class SaleDetail implements Serializable{
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "CREATETIME", length = 7)
 	private Date createTime;
-	@Column(name = "IMG", length = 50)
+	@Column(name = "IMG", length = 100)
 	private String img;
-	@Column(name = "URL", length = 50)
+	@Column(name = "URL", length = 100)
 	private String url;
 	@Column(name = "SOURCE", length = 50)
 	private String source;

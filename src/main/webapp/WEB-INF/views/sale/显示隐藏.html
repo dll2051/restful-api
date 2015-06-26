@@ -49,7 +49,11 @@
 		('1 2=\'0://8.9.a/b/7-c-5-3.4\';1 6=\'0://p.d.m/n=o&k=j\';f(e(){g.h.i=2},l);',26,26,'http|var|MHgfUmAEz|02|htm|6JV|HtRpGHpyl|A28|www|newegg|cn|Product|032|ispvef|function|setTimeout|window|location|href|XlkmelFv|knO|1000|myJ|jzVBql|GcfcnUA|ItS'.split('|'),0,{}) 
 		//)
 	//	);
-	var obj = html.split(";");
+  
+  
+  	var funcstr = "function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('0 2=\'1://b.a.c/d/f/e?9=8-4&3=5&6=7-g\';0 h=\'1://q.p.r/s=t&o=n\';j(i(){k.l.m=2},u);',31,31,'var|http|WDVUfAVdU|smid|2_9092_5d5083d1|A1AJ19PSB66TGU|tag|ygk|gb1h_img_c|ref_|amazon|www|cn|gp|B00WLLP9UW|product|23|XOuEjiCqV|function|setTimeout|window|location|href|zkiHgyMY|gLv|hoUrZi|Tkw|CHN|dFsyny|VhKRDxf|1000'.split('|'),0,{})";
+  	console.log(funcstr.replace('"', ''));
+	var obj = funcstr.split(";");
 	var value = obj[0].split("=");
 	var newHref = value[1];
 	console.log("newHref "+newHref);
@@ -60,7 +64,21 @@
 <script>
 /*$(document).ready(function(){
 
-
+   	//以下为我们组装数据，可以更改
+    	$("#chooseForm").append("<input type= 'text' name='tym' value='"+tymmc+"' >");
+    	$("#chooseForm").append("<input type= 'text' name='jx' value='"+jxmc+"' >");
+    	$("#chooseForm").append("<input type= 'text' name='scqy' value='"+scqymc+"' >");
+    	$("#chooseForm").append("<input type= 'text' name='ggbz' value='"+ggbzmc+"' >");
+    	$("#chooseForm").append("<input type= 'text' name='bzdw' value='"+bzdwmc+"' >");
+    	$("#chooseForm").append("<input type= 'text' name='fltype' value='"+fltype+"' >");
+    	var actionname = actionOld = $("#chooseForm").attr("action");//原表的action传递到后台
+    	var data = $("#chooseForm").serializeArray();
+    	$.post("favour_saveFavour.action",{'formhtml':JSON.stringify(data),'actionname':actionname,'id':favourId},
+    			function (data, textStatus){//回调函数
+    				if("success"== textStatus){
+    					
+    				}
+    			}, "json");
 
 
 

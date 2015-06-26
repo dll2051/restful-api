@@ -737,6 +737,16 @@
 		  <artifactId>jackson-jaxrs</artifactId>
 		  <version>1.9.0</version>
 		</dependency>
+		<!-- dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-jaxb-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency-->
 		 <dependency>
             <groupId>org.codehaus.jettison</groupId>
             <artifactId>jettison</artifactId>
@@ -759,6 +769,25 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.18</version>
 		</dependency>
+		<!-- oscache -->
+		<dependency>
+			<groupId>com.opensymphony</groupId>
+			<artifactId>oscache</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+		<!-- acegi-security -->
+		<dependency>
+			<groupId>net.sf</groupId>
+			<artifactId>acegi-security</artifactId>
+			<version>0.9.0</version>
+		</dependency>
+		
+		
+		<dependency>
+			<groupId>org.apache</groupId>
+			<artifactId>oro</artifactId>
+			<version>2.0.8</version>
+		</dependency>
 		
 		<dependency>  
     		<groupId>org.jsoup</groupId>  
@@ -770,16 +799,16 @@
     		<artifactId>httpclient</artifactId>
     		<version>4.3.5</version>
 		</dependency>
-		<!-- acegi-security -->
+		<!--  -->
 		<dependency>
-			<groupId>net.sf</groupId>
-			<artifactId>acegi-security</artifactId>
-			<version>0.9.0</version>
+  			<groupId>com.google.code.gson</groupId>
+  			<artifactId>gson</artifactId>
+  			<version>2.3.1</version>
 		</dependency>
-				<dependency>
-			<groupId>org.apache</groupId>
-			<artifactId>oro</artifactId>
-			<version>2.0.8</version>
-		</dependency>
+<!-- 		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.5</version>
+		</dependency> -->
 	</dependencies>
 </project>

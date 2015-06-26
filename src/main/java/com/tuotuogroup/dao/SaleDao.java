@@ -1,5 +1,6 @@
 package com.tuotuogroup.dao;
 
+import java.util.List;
 import java.util.Map;
 
 import org.hibernate.SessionFactory;
@@ -24,4 +25,32 @@ public interface SaleDao extends IBaseHibernateDao<SaleDetail, String> {
 	 * @return
 	 */
 	public Map getSaleDetailList(DataGridModel dgm);
+
+	/**
+	 * @param mallname
+	 * @param source
+	 */
+	public List<SaleDetail> queryAllSaleDetailData(String mallname, String source);
+
+	/**
+	 * @return
+	 */
+	public SaleDetail getOneSaleDetail();
+
+	/**
+	 * @param id
+	 * @return
+	 */
+	public SaleDetail getSaleDetailByID(String id);
+
+	/**
+	 * @param id
+	 * @param url
+	 */
+	public void updateSaleDetail(String id, String url);
+
+	/**
+	 * @param id
+	 */
+	public void updateErrorSaleUrl(String id);
 }

@@ -3,8 +3,6 @@
 	<name>restful-api</name>
 	<comment></comment>
 	<projects>
-		<project>commons-core</project>
-		<project>commons-dictionary</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

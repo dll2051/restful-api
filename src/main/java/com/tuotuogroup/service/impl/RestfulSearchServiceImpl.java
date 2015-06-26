@@ -19,7 +19,6 @@ public class RestfulSearchServiceImpl implements RestfulSearchService {
 	@Override
 	public List<SaleDetail> queryAllSaleDetailData(String mallname,
 			String source) {
-		// TODO Auto-generated method stub
-		return null;
+		return saleDao.queryAllSaleDetailData(mallname,source);
 	}
 }

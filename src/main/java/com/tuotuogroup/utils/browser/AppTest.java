@@ -3,19 +3,42 @@
  */
 package com.tuotuogroup.utils.browser;
 
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+
+import com.google.gson.Gson;
+import com.tuotuogroup.entity.SaleDetail;
+import com.tuotuogroup.model.ResultDataVO;
+import com.tuotuogroup.utils.GsonUtil;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 
 /**
  * @author wonders
  * 
  */
 public class AppTest {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// String oldUrl = "http://zhufu.sinaapp.com/api/go.php?id=1077983";
-		  
-		String oldUrl = "http://zhufu.sinaapp.com/api/go.php?id=1137581";
+		String oldUrl = "http://zhufu.sinaapp.com/api/getdata.php?v=1.1.6&page=1";
+		HtmlJsoup hj = new HtmlJsoup();
+		String data = hj.getPage(oldUrl, null, null, null, "UTF-8",
+				"UTF-8").body().html();
+		//System.out.println(data);
+		ResultDataVO vo = GsonUtil.fromJson(data, ResultDataVO.class);
+		List<SaleDetail> saleList = vo.getData();
+		for (SaleDetail saleDetail : saleList) {
+			System.out.println(saleDetail.getMallname());
+		}
+		System.out.println(vo.getMaxid());
+		/*  
+		String oldUrl = "http://zhufu.sinaapp.com/api/go.php?id=1430003";
 		HtmlJsoup hj = new HtmlJsoup();
 		String script = hj.getPage(oldUrl, null, null, null, "UTF-8",
 				"UTF-8").body().html();
@@ -23,7 +46,7 @@ public class AppTest {
 		String func = str[1].replace("</script", "").replace("eval(", "").replace("\n", "").trim();
 		func = func.substring(0, func.length()-1);
 		 
-		System.out.println(func);
+		System.out.println(func);*/
 		 
 		String teStr = "function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('0 2=\'1://7.8.9/6.b?5=3\';0 4=\'1://a.n.c/k=l&m=i\';h(d(){e.f.g=2},j);',24,24,'var|http|uVUXTwpBR|43618274931|IdYjhbtfm|id|item|detail|tmall|com|hRK|htm|Nde|function|window|location|href|setTimeout|GZQovtaZ|1000|gmYbNV|aTWqnhE|SPN|qrfZrT'.split('|'),0,{})";
 		//System.out.println(teStr);

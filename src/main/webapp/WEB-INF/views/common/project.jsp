@@ -11,11 +11,10 @@
 <script type="text/javascript" src="${base}/assets/js/jquery-easyui-1.4/extends/jquery.extends.js"></script>
 <script type="text/javascript" src="${base}/static/js/common/main.js"></script>
 <script type="text/javascript">
-<!--
+
 var base = '${base}';
 String.prototype.trim = function () {
 	return this.replace(/^\s|\s$/g, "");
 }
-//-->
 </script>
 

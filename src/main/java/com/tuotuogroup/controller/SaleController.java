@@ -4,26 +4,34 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
+import net.sf.json.JSONObject;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.tuotuogroup.core.constant.ResultCode;
+import com.tuotuogroup.core.constant.ResultMessage;
 import com.tuotuogroup.core.hibernate.PageRequest;
 import com.tuotuogroup.core.pagination.DataGridModel;
 import com.tuotuogroup.core.web.ResultConstant;
 import com.tuotuogroup.core.web.ResultVO;
 import com.tuotuogroup.entity.SaleDetail;
+import com.tuotuogroup.model.ResultDataVO;
 import com.tuotuogroup.service.SaleService;
+import com.tuotuogroup.utils.GsonUtil;
+import com.tuotuogroup.utils.SourceAPIUtil;
+import com.tuotuogroup.utils.browser.HtmlJsoup;
 
 @Controller
 public class SaleController {
-	public SaleController() {
-		System.out.println("===============SaleController");
-	}
 	/**
 	 * 日志
 	 */
@@ -38,8 +46,9 @@ public class SaleController {
 	 */
 	@RequestMapping(value = "saleDetail/index")
 	public String index() {
-		return "dictionary/index";
+		return "sale/index";
 	}
+	
 
 	@RequestMapping(value = "saleDetail/saveOrUpdate")
 	@ResponseBody
@@ -47,10 +56,40 @@ public class SaleController {
 		ResultVO resultVO = null;
 		try {
 			if (saleDetail != null && saleDetail.getId().isEmpty()) {
-				saleDetail.setId(null);
+				saleDetail.setStatus(1);
 			}
 			saleService.saveOrUpdate(saleDetail);
 			resultVO = new ResultVO(saleDetail);
+		} catch (Exception e) {
+			log.error(e.getMessage(), e);
+			resultVO.setResult(ResultConstant.RESULT_FAIL);
+			resultVO.setMessage(e.getMessage());
+		}
+		return resultVO;
+	}
+	@RequestMapping(value = "saleDetail/update")
+	@ResponseBody
+	public ResultVO update(String id,String url) {
+		ResultVO resultVO = new ResultVO();
+		try {
+			saleService.updateSaleDetail(id,url);
+			resultVO.setResult(ResultCode.SUCCESS);
+			resultVO.setMessage(ResultMessage.SUCCESS);
+		} catch (Exception e) {
+			log.error(e.getMessage(), e);
+			resultVO.setResult(ResultConstant.RESULT_FAIL);
+			resultVO.setMessage(e.getMessage());
+		}
+		return resultVO;
+	}
+	@RequestMapping(value = "saleDetail/errorSaleUrl")
+	@ResponseBody
+	public ResultVO errorSaleUrl(String id) {
+		ResultVO resultVO = new ResultVO();
+		try {
+			saleService.updateErrorSaleUrl(id);
+			resultVO.setResult(ResultCode.SUCCESS);
+			resultVO.setMessage(ResultMessage.SUCCESS);
 		} catch (Exception e) {
 			log.error(e.getMessage(), e);
 			resultVO.setResult(ResultConstant.RESULT_FAIL);

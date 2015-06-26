@@ -1,30 +1,18 @@
 package com.tuotuogroup.model;
 
 import java.io.Serializable;
-
-/**
- * 
- * @描述:返回给前台AJAX调用的结果VO
- * @创建人：Hutao(hutao02@wondersgroup.com) 
- * @创建时间:2014-10-10 上午09:16:20   
- * @修改人:Hutao(hutao02@wondersgroup.com)   
- * @修改时间:2014-10-10 上午09:16:20   
- * @修改备注:   
- * @version 1.0
- *
- */
 public class ResultVO implements Serializable {
 
 	/**
 	 * serialVersionUID
 	 */
-	private static final long serialVersionUID = -2527254854666673613L;
+	private static final long serialVersionUID = 5014122386537863180L;
 	/**
 	 * 返回给客户端的结果
 	 */
 	private String result;
 	/**
-	 * 返回给客户端的提示信息
+	 * 返回给客户端的信息
 	 */
 	private String message;
 	/**

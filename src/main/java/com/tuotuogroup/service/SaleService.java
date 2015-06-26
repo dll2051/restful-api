@@ -14,5 +14,23 @@ public interface SaleService {
 	 * @return
 	 */
 	public Map getSaleDetailList(DataGridModel dgm);
+	/**
+	 * @return
+	 */
+	public SaleDetail getOneSaleDetail();
+	/**
+	 * @param id
+	 * @return
+	 */
+	public SaleDetail getSaleDetailByID(String id);
+	/**
+	 * @param id
+	 * @param url
+	 */
+	public void updateSaleDetail(String id, String url);
+	/**
+	 * @param id
+	 */
+	public void updateErrorSaleUrl(String id);
 	
 }

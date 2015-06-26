@@ -45,6 +45,42 @@ public class SaleServiceImpl implements SaleService {
 	public Map getSaleDetailList(DataGridModel dgm) {
 		return saleDao.getSaleDetailList(dgm);
 	}
+
+
+	/**
+	 * 
+	 */
+	@Override
+	public SaleDetail getOneSaleDetail() {
+		return saleDao.getOneSaleDetail();
+	}
+
+
+	/**
+	 * 
+	 */
+	@Override
+	public SaleDetail getSaleDetailByID(String id) {
+		return saleDao.getSaleDetailByID(id);
+	}
+
+
+	/**
+	 * 
+	 */
+	@Override
+	public void updateSaleDetail(String id, String url) {
+		saleDao.updateSaleDetail(id,url);
+	}
+
+
+	/**
+	 * 
+	 */
+	@Override
+	public void updateErrorSaleUrl(String id) {
+		saleDao.updateErrorSaleUrl(id);
+	}
 	
 
 }

@@ -45,6 +45,7 @@ public class RestfulSearchController extends BaseRestfulServiceController {
 			@QueryParam(value = "source") String source) {
 		List<SaleDetail> voList = new ArrayList<SaleDetail>();
 		try {
+//			mallname = new String(mallname.getBytes("ISO-8859-1"), "UTF-8");
 			voList = restfulSearchService.queryAllSaleDetailData(
 					mallname, source);
 			return new ResultVO<List<SaleDetail>>(ResultCode.SUCCESS, ResultMessage.SUCCESS,

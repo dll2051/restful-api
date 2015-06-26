@@ -10,15 +10,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * 
  * @描述:返回给前台AJAX调用的结果VO
- * @创建人：Hutao(hutao02@wondersgroup.com) 
- * @创建时间:2014-10-10 上午09:16:20   
- * @修改人:Hutao(hutao02@wondersgroup.com)   
- * @修改时间:2014-10-10 上午09:16:20   
- * @修改备注:   
- * @version 1.0
- *
  */
-@XmlRootElement()     
+@XmlRootElement()  
 @XmlAccessorType(XmlAccessType.PROPERTY)
 public class ResultVO<T>{
 	/**
