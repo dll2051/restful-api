@@ -37,7 +37,7 @@ public class SaleDaoImpl extends BaseHibernateDao<SaleDetail, String> implements
 	 */
 	@Override
 	public Map getSaleDetailList(PageRequest pageRequest) {
-		String sql = "select * from tb_saledetail";
+		String sql = "select * from tb_saledetail where status = '1'";
 		Query query = getSession().createSQLQuery(sql).
 		setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
 		Map map = new HashMap();

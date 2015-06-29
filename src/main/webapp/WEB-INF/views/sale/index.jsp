@@ -2,7 +2,7 @@
 <%@ include file="../common/taglibs.jsp"%>
 <html>
 <head>
- <title>字典管理</title>
+ <title>商品管理</title>
  <%@ include file="../common/project.jsp" %>
   <script type="text/javascript" src="${base}/static/js/dictionary/dictionary.js"></script>
   <script type="text/javascript" src="${base}/static/js/dictionary/saleDetail.js"></script>
