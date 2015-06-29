@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 import com.tuotuogroup.core.hibernate.Page;
 import com.tuotuogroup.core.hibernate.PageRequest;
-import com.tuotuogroup.core.pagination.DataGridModel;
 import com.tuotuogroup.dao.SaleDao;
 import com.tuotuogroup.entity.SaleDetail;
 import com.tuotuogroup.service.SaleService;
@@ -42,8 +41,8 @@ public class SaleServiceImpl implements SaleService {
 	 * 
 	 */
 	@Override
-	public Map getSaleDetailList(DataGridModel dgm) {
-		return saleDao.getSaleDetailList(dgm);
+	public Map getSaleDetailList(PageRequest pageRequest) {
+		return saleDao.getSaleDetailList(pageRequest);
 	}
 
 

@@ -4,7 +4,6 @@ import java.util.Map;
 
 import com.tuotuogroup.core.hibernate.Page;
 import com.tuotuogroup.core.hibernate.PageRequest;
-import com.tuotuogroup.core.pagination.DataGridModel;
 import com.tuotuogroup.entity.SaleDetail;
 
 public interface SaleService {
@@ -13,7 +12,7 @@ public interface SaleService {
 	/**
 	 * @return
 	 */
-	public Map getSaleDetailList(DataGridModel dgm);
+	public Map getSaleDetailList(PageRequest pageRequest);
 	/**
 	 * @return
 	 */

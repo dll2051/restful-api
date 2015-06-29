@@ -4,15 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.http.HttpServletRequest;
-
-import net.sf.json.JSONObject;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -20,15 +15,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.tuotuogroup.core.constant.ResultCode;
 import com.tuotuogroup.core.constant.ResultMessage;
 import com.tuotuogroup.core.hibernate.PageRequest;
-import com.tuotuogroup.core.pagination.DataGridModel;
 import com.tuotuogroup.core.web.ResultConstant;
 import com.tuotuogroup.core.web.ResultVO;
 import com.tuotuogroup.entity.SaleDetail;
-import com.tuotuogroup.model.ResultDataVO;
 import com.tuotuogroup.service.SaleService;
-import com.tuotuogroup.utils.GsonUtil;
-import com.tuotuogroup.utils.SourceAPIUtil;
-import com.tuotuogroup.utils.browser.HtmlJsoup;
 
 @Controller
 public class SaleController {
@@ -137,11 +127,10 @@ public class SaleController {
 	@RequestMapping(value = "saleDetail/querySaleDetailList")
 	@ResponseBody
 	public Map<String, Object> querySaleDetailList(PageRequest pageRequest,
-			DataGridModel dgm,
 			@RequestParam(value = "id", required = false) String id) {
 		Map<String, Object> result = new HashMap<String, Object>(2);
 		try {
-			Map map = saleService.getSaleDetailList(dgm);
+			Map map = saleService.getSaleDetailList(pageRequest);
 			if (map != null) {
 				// 查询总条数
 				    result.put("total", map.get("listSize"));

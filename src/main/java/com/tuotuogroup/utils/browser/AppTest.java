@@ -3,26 +3,15 @@
  */
 package com.tuotuogroup.utils.browser;
 
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
-import com.google.gson.Gson;
 import com.tuotuogroup.entity.SaleDetail;
 import com.tuotuogroup.model.ResultDataVO;
 import com.tuotuogroup.utils.GsonUtil;
-
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-
-/**
- * @author wonders
- * 
- */
 public class AppTest {
 	public static void main(String[] args) throws Exception {
 		// String oldUrl = "http://zhufu.sinaapp.com/api/go.php?id=1077983";

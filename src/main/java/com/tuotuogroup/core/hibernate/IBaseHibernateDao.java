@@ -13,10 +13,6 @@ import org.hibernate.criterion.Criterion;
 
 import com.tuotuogroup.core.hibernate.PropertyFilter.MatchType;
 
-/**
- * @author windows
- *
- */
 public interface IBaseHibernateDao<T, PK extends Serializable> extends
 		ISimpleHibernateDao<T, PK> {
 	// -- 分页查询函数 --//

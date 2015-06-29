@@ -8,7 +8,6 @@ import org.hibernate.SessionFactory;
 import com.tuotuogroup.core.hibernate.IBaseHibernateDao;
 import com.tuotuogroup.core.hibernate.Page;
 import com.tuotuogroup.core.hibernate.PageRequest;
-import com.tuotuogroup.core.pagination.DataGridModel;
 import com.tuotuogroup.entity.SaleDetail;
 
 public interface SaleDao extends IBaseHibernateDao<SaleDetail, String> {
@@ -24,7 +23,7 @@ public interface SaleDao extends IBaseHibernateDao<SaleDetail, String> {
 	/**
 	 * @return
 	 */
-	public Map getSaleDetailList(DataGridModel dgm);
+	public Map getSaleDetailList(PageRequest pageRequest);
 
 	/**
 	 * @param mallname

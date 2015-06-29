@@ -1,7 +1,5 @@
 package com.tuotuogroup.dao;
 
-import java.util.Dictionary;
-
 import org.hibernate.SessionFactory;
 
 import com.tuotuogroup.core.hibernate.IBaseHibernateDao;

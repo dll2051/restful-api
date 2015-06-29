@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.tuotuogroup.core.web;
 
 import javax.xml.bind.annotation.XmlAccessType;
