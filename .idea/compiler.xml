@@ -24,8 +24,16 @@
         <processorPath useClasspath="true" />
         <module name="restful-api (2) (com.tuotuogroup.platform)" />
       </profile>
+      <profile default="false" name="Annotation profile for restful-api" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="restful-api" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="restful-api" target="1.7" />
       <module name="restful-api (1) (restful-api)" target="1.5" />
       <module name="restful-api (2) (com.tuotuogroup.platform)" target="1.7" />
     </bytecodeTargetLevel>
