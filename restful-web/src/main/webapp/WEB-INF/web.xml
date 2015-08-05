@@ -40,10 +40,10 @@
   <filter>
     <filter-name>commonFilter</filter-name>
     <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-    <init-param>
+<!--    <init-param>
       <param-name>targetBeanName</param-name>
       <param-value>wondersCommonFilter</param-value>
-    </init-param>
+    </init-param>-->
     <init-param>
       <param-name>targetFilterLifecycle</param-name>
       <param-value>true</param-value>
