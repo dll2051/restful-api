@@ -11,7 +11,8 @@
     <packaging>pom</packaging>
  
     <modules>
-        <module>restful-api</module>
+        <module>commons-auth</module>
+        <module>restful-web</module>
     </modules>
  
 </project>

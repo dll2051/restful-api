@@ -19,7 +19,7 @@
 	<bean id="noneFilter" class="com.tuotuogroup.filter.NoneFilter"></bean>
 
 	<!-- 过滤器设置 -->
-	<bean id="wondersCommonFilter" class="net.sf.acegisecurity.util.FilterChainProxy">
+	<!-- <bean id="wondersCommonFilter" class="net.sf.acegisecurity.util.FilterChainProxy">
 		<property name="filterInvocationDefinitionSource">
 			<value>
 				CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISON
@@ -40,5 +40,5 @@
 				
 			</value>
 		</property>
-	</bean>
+	</bean> -->
 </beans>

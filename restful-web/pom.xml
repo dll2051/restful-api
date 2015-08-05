@@ -4,11 +4,33 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tuotuogroup.platform</groupId>
-	<artifactId>restful-api</artifactId>
+	<artifactId>restful-web</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
-	<name>restful-api</name>
+	<name>restful-web</name>
 
+
+	<!-- 设定除中央仓库 (repo1.maven.org/maven2/)外的其他仓库,按设定顺序进行查询，如有Nexus私服, 取消注释并指向正确的服务器地址
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://localhost:8081/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+-->
+	<!-- 如有Nexus私服, 取消注释并指向正确的服务器地址
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://localhost:8081/nexus/content/groups/public</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>-->
+	
 	<!-- <build> <plugins> 插件 -->
 	<!-- 插件配置 -->
 	<build>
@@ -511,11 +533,11 @@
 			<artifactId>spring-hateoas</artifactId>
 			<version>0.8.0.RELEASE</version>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
 			<version>2.2.2</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
