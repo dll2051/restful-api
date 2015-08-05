@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="restful-api (2) (com.tuotuogroup.platform):war">
-    <output-path>$PROJECT_DIR$/restful-api/target</output-path>
-    <root id="archive" name="restful-api.war">
-      <element id="artifact" artifact-name="restful-api (2) (com.tuotuogroup.platform):war exploded" />
-    </root>
-  </artifact>
-</component>
