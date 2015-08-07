@@ -1,11 +1,11 @@
 # Maven #
 target/
 
-# IDEA #
+# IDEA project files#
 .idea/
 *.iml
 
-# Eclipse #
+# Eclipse project files#
 .settings/
 .classpath
 .project
