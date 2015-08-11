@@ -18,8 +18,10 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @date: 15/8/10
  */
 public class UserRealm extends AuthorizingRealm{
+
     @Autowired
     private UserService userService;
+
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         String username = (String) principalCollection.getPrimaryPrincipal();
