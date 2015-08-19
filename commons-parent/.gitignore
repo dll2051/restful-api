@@ -1,0 +1,12 @@
+# Maven #
+target/
+
+# IDEA project files#
+.idea/
+*.iml
+
+# Eclipse project files#
+.settings/
+.classpath
+.project
+.checkstyle
