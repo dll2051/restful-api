@@ -3,6 +3,7 @@ package com.tuotuogroup.login.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.util.Set;
 
 /**
  * TbAuthUser
@@ -21,6 +22,9 @@ public class TbAuthUser extends BaseEntity {
     private String password; //密码
     @Column(name = "salt",length = 100)
     private String salt; //加密密码的盐
+
+    //多对多，一个用户可以对应多个角色，一个角色也可以对应多个用户
+    private Set<TbAuthRole> tbAuthRoles;
 
     public Long getOrganizationId() {
         return organizationId;

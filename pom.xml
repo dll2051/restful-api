@@ -5,14 +5,13 @@
  
     <modelVersion>4.0.0</modelVersion>
  
-    <groupId>restful-api</groupId>
+    <groupId>com.tuotuogroup</groupId>
     <artifactId>restful-api</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
  
     <modules>
-        <module>commons-auth</module>
-        <module>restful-web</module>
+        <module>commons-parent</module>
     </modules>
  
 </project>
